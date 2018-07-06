@@ -1,0 +1,12 @@
+[package]
+name = "piesvg"
+version = "0.1.0"
+authors = ["noah"]
+description = "produce pie chart svgs just like you always wanted to!"
+
+[[bin]]
+path = "src/main.rs"
+name = "hostap"
+
+[dependencies]
+clap = "2"
