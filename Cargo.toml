@@ -10,3 +10,4 @@ name = "hostap"
 
 [dependencies]
 clap = "2"
+svg = "*"
