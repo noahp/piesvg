@@ -6,7 +6,7 @@ description = "produce pie chart svgs just like you always wanted to!"
 
 [[bin]]
 path = "src/main.rs"
-name = "hostap"
+name = "piesvg"
 
 [dependencies]
 clap = "2"
