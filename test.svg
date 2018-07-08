@@ -1,11 +1,7 @@
-<!-- Test svg... from:
-  https://medium.com/@heyoka/scratch-made-svg-donut-pie-charts-in-html5-2c587e935d72 -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 42 42" class="donut">
-  <circle class="donut-hole" cx="21" cy="21" r="10" fill="#fff"/>
-  <circle class="donut-ring" cx="21" cy="21" r="10" fill="transparent" stroke="#d2d3d4" stroke-width="20"/>
-
-  <circle class="donut-segment" cx="21" cy="21" r="10" fill="transparent" stroke="#ce4b99" stroke-width="20" stroke-dasharray="40 60" stroke-dashoffset="25"/>
-  <circle class="donut-segment" cx="21" cy="21" r="10" fill="transparent" stroke="#b1c94e" stroke-width="20" stroke-dasharray="20 80" stroke-dashoffset="85"/>
-  <circle class="donut-segment" cx="21" cy="21" r="10" fill="transparent" stroke="#377bbc" stroke-width="20" stroke-dasharray="30 70" stroke-dashoffset="65"/>
-  <!-- unused 10% -->
+<svg class="donut" height="100%" viewBox="0 0 42 42" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<circle class="donut-hole" cx="21" cy="21" fill="#fff" r="10"/>
+<circle class="donut-ring" cx="21" cy="21" fill="transparent" r="10" stroke="#d2d3d4" stroke-width="20"/>
+<circle class="donut-segment" cx="21" cy="21" fill="transparent" r="10" stroke="#ce4b99" stroke-dasharray="40 60" stroke-dashoffset="25" stroke-width="20"/>
+<circle class="donut-segment" cx="21" cy="21" fill="transparent" r="10" stroke="#b1c94e" stroke-dasharray="20 80" stroke-dashoffset="85" stroke-width="20"/>
+<circle class="donut-segment" cx="21" cy="21" fill="transparent" r="10" stroke="#377bbc" stroke-dasharray="30 70" stroke-dashoffset="65" stroke-width="20"/>
 </svg>
