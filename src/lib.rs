@@ -1,3 +1,15 @@
+//      _/_/_/  _/_/_/  _/_/_/      _/_/_/  _/        _/_/_/_/
+//   _/          _/    _/    _/  _/        _/        _/
+//  _/          _/    _/_/_/    _/        _/        _/_/_/
+// _/          _/    _/    _/  _/        _/        _/
+//  _/_/_/  _/_/_/  _/    _/    _/_/_/  _/_/_/_/  _/_/_/_/
+
+//      _/_/_/  _/_/_/      _/_/    _/_/_/    _/    _/
+//   _/        _/    _/  _/    _/  _/    _/  _/    _/
+//  _/  _/_/  _/_/_/    _/_/_/_/  _/_/_/    _/_/_/_/
+// _/    _/  _/    _/  _/    _/  _/        _/    _/
+//  _/_/_/  _/    _/  _/    _/  _/        _/    _/
+//
 // Oh Hi! this is a real dumb library that can produce a completely
 // non-customizable svg pie chart. See something like pygal for a non terrible
 // version of this, ok see you later.
@@ -11,9 +23,9 @@ use svg::Document;
 #[derive(Debug)]
 pub struct Pieslice {
     // category name
-    name: String,
+    pub name: String,
     // slice size
-    value: f32,
+    pub value: f32,
 }
 
 #[cfg(test)]
@@ -21,7 +33,7 @@ mod tests {
     use make_svg;
     use Pieslice;
     #[test]
-    fn it_works() {
+    fn happypath() {
         let slicies: [Pieslice; 2] = [
             Pieslice {
                 name: "one".to_string(),
@@ -49,8 +61,30 @@ fn get_segment(stroke: &str, dasharray: (usize, usize), dashoffset: usize) -> Ci
         .set("stroke-dashoffset", dashoffset)
 }
 
-pub fn make_svg(outfilename: &str, slices: &[Pieslice]) {
-    println!("slicies: {:?}", slices);
+/// Generate the svg pie chart.
+///
+/// # Arguments
+/// * `outfilename` - filename where the svg pie chart should be saved
+/// * `entries` - `Pieslice` entries to the chart
+///
+/// # Example
+/// ```rust
+/// use piesvg::make_svg;
+/// use piesvg::Pieslice;
+/// let slicies: [Pieslice; 2] = [
+///     Pieslice {
+///         name: "one".to_string(),
+///         value: 1.2,
+///     },
+///     Pieslice {
+///         name: "two".to_string(),
+///         value: 2.3,
+///     },
+/// ];
+/// make_svg("test.svg", &slicies);
+/// ```
+pub fn make_svg(outfilename: &str, entries: &[Pieslice]) {
+    println!("slicies: {:?}", entries);
 
     let donut_hole = Circle::new()
         .set("class", "donut-hole")
