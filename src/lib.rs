@@ -1,18 +1,20 @@
-//      _/_/_/  _/_/_/  _/_/_/      _/_/_/  _/        _/_/_/_/
-//   _/          _/    _/    _/  _/        _/        _/
-//  _/          _/    _/_/_/    _/        _/        _/_/_/
-// _/          _/    _/    _/  _/        _/        _/
-//  _/_/_/  _/_/_/  _/    _/    _/_/_/  _/_/_/_/  _/_/_/_/
-
-//      _/_/_/  _/_/_/      _/_/    _/_/_/    _/    _/
-//   _/        _/    _/  _/    _/  _/    _/  _/    _/
-//  _/  _/_/  _/_/_/    _/_/_/_/  _/_/_/    _/_/_/_/
-// _/    _/  _/    _/  _/    _/  _/        _/    _/
-//  _/_/_/  _/    _/  _/    _/  _/        _/    _/
-//
-// Oh Hi! this is a real dumb library that can produce a completely
-// non-customizable svg pie chart. See something like pygal for a non terrible
-// version of this, ok see you later.
+//! ```
+//!      _/_/_/  _/_/_/  _/_/_/      _/_/_/  _/        _/_/_/_/
+//!   _/          _/    _/    _/  _/        _/        _/
+//!  _/          _/    _/_/_/    _/        _/        _/_/_/
+//! _/          _/    _/    _/  _/        _/        _/
+//!  _/_/_/  _/_/_/  _/    _/    _/_/_/  _/_/_/_/  _/_/_/_/
+//!
+//!      _/_/_/  _/_/_/      _/_/    _/_/_/    _/    _/
+//!   _/        _/    _/  _/    _/  _/    _/  _/    _/
+//!  _/  _/_/  _/_/_/    _/_/_/_/  _/_/_/    _/_/_/_/
+//! _/    _/  _/    _/  _/    _/  _/        _/    _/
+//!  _/_/_/  _/    _/  _/    _/  _/        _/    _/
+//! ```
+//!
+//! Oh Hi! this is a real dumb library that can produce a completely
+//! non-customizable svg pie chart. See something like pygal for a non terrible
+//! version of this, ok see you later.
 
 extern crate svg;
 
